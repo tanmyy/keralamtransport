@@ -3,14 +3,22 @@
 
 <head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>keralamtransport.com</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 height:100vh;
 display:flex;
 justify-content:center;
@@ -22,6 +30,8 @@ position:relative;
 overflow:hidden;
 }
 
+/* Background Image */
+
 body::before{
 content:"";
 position:fixed;
@@ -29,10 +39,12 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:url("am_AdobeStock_467454020.jpeg.jpg") center/cover no-repeat;
+background:url("GettyImages-110051777.webp") center/cover no-repeat;
 opacity:0.7;
 z-index:-2;
 }
+
+/* Dark overlay */
 
 body::after{
 content:"";
@@ -46,24 +58,34 @@ opacity:0.45;
 z-index:-1;
 }
 
+/* Card container */
+
 .container{
-background:rgba(30,41,59,0.8);
+background:rgba(30,41,59,0.85);
 padding:60px 80px;
 border-radius:14px;
 box-shadow:0 25px 60px rgba(0,0,0,0.5);
+max-width:520px;
+width:90%;
 }
 
+/* Domain title */
+
 h1{
-font-size:42px;
-margin-bottom:10px;
+font-size:40px;
+margin-bottom:12px;
 letter-spacing:1px;
 }
+
+/* Subtitle */
 
 .subtitle{
 color:#cbd5f5;
 font-size:18px;
 margin-bottom:30px;
 }
+
+/* Button */
 
 .emailbtn{
 display:inline-block;
@@ -74,12 +96,15 @@ color:#0f172a;
 text-decoration:none;
 font-weight:600;
 border-radius:8px;
-transition:0.2s;
+transition:0.25s;
 }
 
 .emailbtn:hover{
 background:#0ea5e9;
+transform:translateY(-2px);
 }
+
+/* Email note */
 
 .note{
 margin-top:20px;
@@ -94,6 +119,33 @@ text-decoration:none;
 
 .note a:hover{
 text-decoration:underline;
+}
+
+/* Mobile responsive */
+
+@media (max-width:768px){
+
+.container{
+padding:35px 25px;
+}
+
+h1{
+font-size:26px;
+}
+
+.subtitle{
+font-size:16px;
+}
+
+.emailbtn{
+padding:12px 22px;
+font-size:14px;
+}
+
+.note{
+font-size:13px;
+}
+
 }
 
 </style>
