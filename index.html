@@ -8,7 +8,7 @@
 
 <title>keralamtransport.com</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -23,14 +23,14 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-font-family:'Montserrat', sans-serif;
+font-family:'Montserrat',sans-serif;
 color:white;
 text-align:center;
 position:relative;
 overflow:hidden;
 }
 
-/* Background Image */
+/* background image */
 
 body::before{
 content:"";
@@ -39,12 +39,12 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:url("am_AdobeStock_467454020.jpeg.jpg") center/cover no-repeat;
-opacity:0.7;
+background:url("GettyImages-110051777.webp") center/cover no-repeat;
+opacity:0.75;
 z-index:-2;
 }
 
-/* Dark overlay */
+/* dark overlay */
 
 body::after{
 content:"";
@@ -53,49 +53,51 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:#0f172a;
-opacity:0.45;
+background:#0b132b;
+opacity:0.55;
 z-index:-1;
 }
 
-/* Card container */
+/* main card */
 
 .container{
-background:rgba(30,41,59,0.85);
-padding:60px 80px;
-border-radius:14px;
-box-shadow:0 25px 60px rgba(0,0,0,0.5);
+background:rgba(30,41,59,0.75);
+padding:55px 65px;
+border-radius:16px;
+backdrop-filter:blur(8px);
+box-shadow:0 30px 60px rgba(0,0,0,0.6);
 max-width:520px;
 width:90%;
 }
 
-/* Domain title */
+/* title */
 
 h1{
-font-size:40px;
-margin-bottom:12px;
+font-size:36px;
+font-weight:700;
+margin-bottom:15px;
 letter-spacing:1px;
 }
 
-/* Subtitle */
+/* subtitle */
 
 .subtitle{
-color:#cbd5f5;
 font-size:18px;
-margin-bottom:30px;
+color:#cbd5f5;
+margin-bottom:35px;
+line-height:1.4;
 }
 
-/* Button */
+/* button */
 
 .emailbtn{
 display:inline-block;
-margin-top:10px;
-padding:14px 28px;
+padding:14px 30px;
 background:#38bdf8;
-color:#0f172a;
+color:#0b132b;
 text-decoration:none;
 font-weight:600;
-border-radius:8px;
+border-radius:10px;
 transition:0.25s;
 }
 
@@ -104,11 +106,11 @@ background:#0ea5e9;
 transform:translateY(-2px);
 }
 
-/* Email note */
+/* email text */
 
 .note{
-margin-top:20px;
-font-size:14px;
+margin-top:25px;
+font-size:15px;
 color:#cbd5f5;
 }
 
@@ -121,33 +123,24 @@ text-decoration:none;
 text-decoration:underline;
 }
 
-/* Mobile responsive */
+/* mobile */
 
 @media (max-width:768px){
 
-body{
-padding:20px;
-}
-
 .container{
-padding:30px 22px;
-width:100%;
-max-width:95%;
-border-radius:12px;
+padding:35px 25px;
 }
 
 h1{
-font-size:24px;
-line-height:1.3;
+font-size:26px;
 }
 
 .subtitle{
-font-size:15px;
-margin-bottom:25px;
+font-size:16px;
 }
 
 .emailbtn{
-padding:12px 20px;
+padding:12px 22px;
 font-size:14px;
 }
 
@@ -167,16 +160,17 @@ font-size:13px;
 
 <h1>keralamtransport.com</h1>
 
-<div class="subtitle">
+<p class="subtitle">
 This premium domain is available for purchase
-</div>
+</p>
 
-<a class="emailbtn" href="https://mail.google.com/mail/?view=cm&to=tanmaykataria12@gmail.com">
+<a class="emailbtn"
+href="https://mail.google.com/mail/?view=cm&to=tanmaykataria12@gmail.com">
 Contact Owner
 </a>
 
 <p class="note">
-or email at 
+or email at
 <a href="mailto:tanmaykataria12@gmail.com">
 tanmaykataria12@gmail.com
 </a>
