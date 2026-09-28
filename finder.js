@@ -19,6 +19,7 @@ tick(o);$('#shot').onclick=()=>{const l=document.createElement('script');const g
 function init(){const f=$('#finder');if(!f)return;const sv=f.querySelector('[name=s]'),dv=f.querySelector('[name=d]');
 f.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{f.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed','false'));c.setAttribute('aria-pressed','true');sv.value=c.dataset.s});
 f.onsubmit=e=>{e.preventDefault();render(sv.value,dv.value);$('#out').scrollIntoView({behavior:'smooth'})};
+const bar=document.querySelector('.bar a');if(bar)bar.onclick=e=>{e.preventDefault();if(f.requestSubmit)f.requestSubmit();else f.dispatchEvent(new Event('submit',{cancelable:true}))};
 const p=f.dataset.s;if(p){f.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',c.dataset.s===p))}
 document.querySelectorAll('.static').forEach(tick)}
 document.addEventListener('DOMContentLoaded',init);
