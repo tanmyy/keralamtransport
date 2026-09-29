@@ -1,5 +1,5 @@
 import json,os
-CF_BEACON="""<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9bdf863a02df43a2b0ff7a06e4ad0fcb"}'></script><!-- End Cloudflare Web Analytics -->"""
+CF_BEACON="""<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9432dec41b444d22a0821e897e5b7404"}'></script><!-- End Cloudflare Web Analytics -->"""
 D=[("KL-01","Thiruvananthapuram","Thiruvananthapuram"),("KL-02","Kollam","Kollam"),("KL-03","Pathanamthitta","Pathanamthitta"),("KL-04","Alappuzha","Alappuzha"),("KL-05","Kottayam","Kottayam"),("KL-06","Idukki","Painavu"),("KL-07","Ernakulam","Ernakulam"),("KL-08","Thrissur","Thrissur"),("KL-09","Palakkad","Palakkad"),("KL-10","Malappuram","Malappuram"),("KL-11","Kozhikode","Kozhikode"),("KL-12","Wayanad","Kalpetta"),("KL-13","Kannur","Kannur"),("KL-14","Kasaragod","Kasaragod")]
 P="https://parivahan.gov.in/"
 # id,name,group,online,steps,docs,fee lines
